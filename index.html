@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="/Assets/image/1001632507-Photoroom.png"
+      type="/Assets/image/png"
+    />
+    <title>Wether App</title>
+  </head>
+
+  <body class="app flex-col">
+    <header class="app__header">
+      <img
+        src="/Assets/image/1001632507-Photoroom.png"
+        alt="Weather App Logo"
+        class="app__logo"
+      />
+      <div class="search-field">
+        <input
+          type="text"
+          class="search-field__input"
+          placeholder="Search location..."
+          aria-label="Search location"
+        />
+        <button class="search-field__btn" aria-label="Search">
+          <img src="/Assets/image/search.svg" alt="search_icon" />
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <main class="app__main">
+        <section class="weather">
+          <div class="weather__temperature">
+            <span class="weather__temperature-value">16°</span>
+          </div>
+
+          <div class="weather__info">
+            <h1 class="weather__city">London</h1>
+            <p class="weather__date">
+              <span class="weather__time">06:09</span> –
+              <span class="weather__full-date">Monday, 21 Sep 2023</span>
+            </p>
+          </div>
+
+          <div class="weather__icon">
+            <img src="/Assets/image/Cloudy.png" alt="Cloudy weather" />
+          </div>
+        </section>
+      </main>
+      <aside class="sidebar glass flex-col">
+        <section class="sidebar-container flex-col">
+          <p class="sidebar__title">Weather Details...</p>
+
+          <section class="weather-stats">
+            <h3 class="weather-stats__summary">
+              THUNDERSTORM WITH LIGHT DRIZZLE
+            </h3>
+
+            <ul class="weather-stats__list">
+              <li class="weather-stats__item">
+                <p class="weather-stats__label">Temp max</p>
+                <span class="weather-stats__value">
+                  <span data-max-temp>19°</span>
+                  <img src="/Assets/image/Vector.png" alt="max temperature" />
+                </span>
+              </li>
+
+              <li class="weather-stats__item">
+                <p class="weather-stats__label">Temp min</p>
+                <span class="weather-stats__value">
+                  <span data-min-temp>15°</span>
+                  <img src="/Assets/image/minTemp.png" alt="min temperature" />
+                </span>
+              </li>
+
+              <li class="weather-stats__item">
+                <p class="weather-stats__label">Humidity</p>
+                <span class="weather-stats__value">
+                  <span data-humidity>58%</span>
+                  <img src="/Assets/image/humidity.png" alt="humidity" />
+                </span>
+              </li>
+
+              <li class="weather-stats__item">
+                <p class="weather-stats__label">Cloudiness</p>
+                <span class="weather-stats__value">
+                  <span data-clouds>86%</span>
+                  <img src="/Assets/image/Cloudy.png" alt="cloudy" />
+                </span>
+              </li>
+
+              <li class="weather-stats__item">
+                <p class="weather-stats__label">Wind</p>
+                <span class="weather-stats__value">
+                  <span data-wind>5 km/h</span>
+                  <img src="/Assets/image/outline.png" alt="wind speed" />
+                </span>
+              </li>
+            </ul>
+          </section>
+          <section class="forecast flex-col">
+            <h3 class="forecast__title">Today's Weather Forecast...</h3>
+            <ul class="forecast__list flex-col">
+              <li class="forecast__item">
+                <div class="forecast__info">
+                  <img src="/Assets/image/Snow.png" alt="Snow" />
+                  <div class="forecast__meta">
+                    <p class="forecast__time">09:00</p>
+                    <p class="forecast__condition">Snow</p>
+                  </div>
+                </div>
+                <p class="forecast__temp">19°</p>
+              </li>
+              <li class="forecast__item">
+                <div class="forecast__info">
+                  <img src="/Assets/image/Snow.png" alt="Snow" />
+                  <div class="forecast__meta">
+                    <p class="forecast__time">09:00</p>
+                    <p class="forecast__condition">Snow</p>
+                  </div>
+                </div>
+                <p class="forecast__temp">19°</p>
+              </li>
+              <li class="forecast__item">
+                <div class="forecast__info">
+                  <img src="/Assets/image/Snow.png" alt="Snow" />
+                  <div class="forecast__meta">
+                    <p class="forecast__time">09:00</p>
+                    <p class="forecast__condition">Snow</p>
+                  </div>
+                </div>
+                <p class="forecast__temp">19°</p>
+              </li>
+              <li class="forecast__item">
+                <div class="forecast__info">
+                  <img src="/Assets/image/Snow.png" alt="Snow" />
+                  <div class="forecast__meta">
+                    <p class="forecast__time">09:00</p>
+                    <p class="forecast__condition">Snow</p>
+                  </div>
+                </div>
+                <p class="forecast__temp">19°</p>
+              </li>
+              <li class="forecast__item">
+                <div class="forecast__info">
+                  <img src="/Assets/image/Snow.png" alt="Snow" />
+                  <div class="forecast__meta">
+                    <p class="forecast__time">09:00</p>
+                    <p class="forecast__condition">Snow</p>
+                  </div>
+                </div>
+                <p class="forecast__temp">19°</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: 'Roboto', sans-serif;
+
+  /* spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+
+  /* colors */
+  --text-color: #ffffff;
+  --glass-bg: hsla(0, 0%, 100%, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --scroll-thumb: rgba(37, 35, 35, 0.35);
+
+  /* typography */
+  --text-xs: clamp(0.75rem, 1vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 1.2vw, 1rem);
+  --text-md: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  min-height: 100vh;
+  background: url('/Assets/image/rain-bg.jpg') center / cover no-repeat fixed;
+}
